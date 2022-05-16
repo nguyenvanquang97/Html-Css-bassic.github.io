@@ -1,0 +1,4 @@
+bodi.txt
+*.txt 
+# bỏ tất cả file txt
+content/

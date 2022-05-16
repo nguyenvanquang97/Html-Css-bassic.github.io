@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "E:\\demo\\New folder"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "java12"
+	}
+}

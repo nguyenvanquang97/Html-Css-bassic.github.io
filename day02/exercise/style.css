@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  width: 543px;
+  background-color: #30598c;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.footer.footer1 {
+  padding: 48px 0;
+  max-width: 100%;
+}
+
+.item {
+  color: #fff;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 400;
+  text-align: center;
+  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #847a8e;
+  box-shadow: 0 1px #847a8e;
+}
+
+h2 {
+  font-size: 18px;
+}

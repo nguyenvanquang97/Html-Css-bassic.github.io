@@ -1,0 +1,42 @@
+h2{
+    color: red;
+}
+#heading {
+    color: blue;
+}
+p{
+    color:brown;
+}
+.text {
+    background-color: bisque;
+}
+.text1{
+    font-size: 30px;
+}
+/* chọn thẻ vừa có class là text vừa có class là .text1 */
+.text.text1{
+    font-size: 20px;
+}
+.text1{
+    font-size: 26px;
+}
+/* chọn thẻ p vừa có class là text vừa có class là .text1 */
+p.text.text1{
+    font-size: 40px;
+}
+/* chọn thẻ p nằm bên trong class là "box" */
+.box p{
+    font-weight: bold;
+}
+/* chọn thẻ h2 và thẻ p */
+h2,p{
+    text-align: center;
+}
+/* chọn 1 class tên .box nằm ngay sau thẻ có id là heading */
+#heading + .box{
+    background-color: aquamarine;
+}
+/* chọn nhiều text nằm ngay sau thẻ p */
+p ~ .text {
+    font-style: italic;
+}

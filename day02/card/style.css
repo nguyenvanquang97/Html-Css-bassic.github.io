@@ -1,0 +1,30 @@
+/* clear 1 số thuộc tính về trạng thái ban đầu */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    width: 320px;
+    box-shadow: ;
+    margin: auto;
+    margin-top: 50px;
+}
+/* auto xuất hiện nếu trang web có ảnh */
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.content {
+    padding: 20px;
+}
+.title{
+
+}
+type{
+    font-size: ;
+}
