@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f7fa;
+    color: #464646;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+  }
+.card{
+    width: 400px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+.time{
+   border-radius: 4px;
+    background-color: #fbbc05;
+    color: #fff;
+text-align: center;
+font-weight: 300;
+overflow: hidden;
+
+
+}
+.year{
+    background-color: #f89707;
+    padding: 3px 0;
+    font-weight: 400;
+}
+.dateandmoon{
+    padding: 30px 170px 30px 170px;
+    font-weight: 400;
+}
+.date{
+    font-size: 2.5rem;
+    line-height: 40px;
+    
+    
+}
+.infor{
+    padding: 16px 24px 0 24px
+;
+}
+.title a {
+    color: #464646;
+
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.timetable{
+    padding: 7px 0;
+    font-size: 14.4px;
+}
+.timetable p{
+    margin-top: 5px;
+}
+.dangky {
+    padding: 7px 0 5px 0;
+    font-weight: 400;
+    border-top: 0.5px solid #c4c4c4e3;
+}
+.dangky    a{
+    color: #3c78e8;
+}
+.title a:hover {
+    box-shadow: 0 2px #464646;;
+}

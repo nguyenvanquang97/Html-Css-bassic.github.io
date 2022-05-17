@@ -1,0 +1,32 @@
+:root {
+font-size: 14px;
+--color-text :#dba040 ;
+--color-heading : #b0460c;
+}
+.text{
+    font-size: 2rem;
+}
+/* đơn vị theo kích thước của thằng cha */
+.box p{
+    font-size: 2em;
+    color: var(--color-text);
+}
+.heading {
+    color: var(--color-heading);
+}
+.box{
+    font-size: 20px;
+}
+/* đơn vị theo phần nhìn thấy */
+.shape {
+    width: 50vw;
+    height: 50vh;
+    background-color: brown;
+}
+/* đơn vị dựa theo kích thước của thẻ cha */
+.child {
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+}
+
