@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: #fff;
+    font-size: 2rem;
+    border: 2px solid #000;
+    /* text-align: center;
+    line-height: 100px; */
+    /* cho các phần tử vào giữa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    flex-wrap: wrap;
+}
