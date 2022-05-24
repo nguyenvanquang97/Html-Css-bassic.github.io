@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: chocolate;
+   /* cách vị trí ban đầu */
+    position: relative;
+    top: 50px;
+    left: 50px;
+    /* z-index lớn sẽ nổi lên trên,phải có position mới áp dụng */
+    z-index: 1; 
+}
+/* vị trí tuyệt dối */
+.parent{
+    width: 700px;
+    height: 400px;
+    background-color: bisque;
+    position: relative;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    /* sẽ đi theo thằng cha,nếu cha k có position sẽ đi theo body */
+    top: 50px;
+    left: 100px;
+}
+.btn-top{
+    padding: 10px 30px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    position: fixed;
+    /* tạo nút */
+    right: 50px;
+    bottom: 50px;
+}
+.sticky{
+    height: 100px;
+    background-color: darkorange;   
+    position: sticky;
+    top: 50px;
+    left: 0;
+}

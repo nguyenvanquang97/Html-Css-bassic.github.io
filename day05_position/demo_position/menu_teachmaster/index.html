@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" href="./image/11zon_cropped.png" type="image/x-icon">
-    <title>Exercise day4</title>
+    <link rel="icon" href="./image/11zon_cropped.png" type="image/x-icon">
+    <title>Menu Techmaster</title>
+
     <!-- Link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +23,97 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="logo">
+        </div>
+
+        <div class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li class="menu-item">
+                        LỘ TRÌNH <span><i class="fa-solid fa-caret-down"></i></span>
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">Web Front End + React.js</li>
+                            <li class="sub-menu-item">Java Spring Boot FullStack</li>
+                            <li class="sub-menu-item">DevOps</li>
+                            <li class="sub-menu-item">Amazon Web Service</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">DOANH NGHIỆP</li>
+                    <li class="menu-item">KHÓA HỌC <span><i class="fa-solid fa-caret-down"></i></span>
+
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">Onlab</li>
+                            <li class="sub-menu-item">Trực tuyến</li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-item">SẢN PHẨM HỌC VIÊN</li>
+                    <li class="menu-item">KHAI GIẢNG</li>
+                    <li class="menu-item">BLOG</li>
+                    <li class="menu-item">TRẢI NGHIỆM</li>
+                    <li class="menu-item">CHÚNG TÔI <span><i class="fa-solid fa-caret-down"></i></span>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">Trung tâm
+
+                            </li>
+                            <li class="sub-menu-item">
+                                Quy định chung
+
+                            </li>
+                            <li class="sub-menu-item">
+                                Giảng viên
+
+                            </li>
+                            <li class="sub-menu-item">
+                                Hướng dẫn đăng ký học
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Giỏ hàng -->
+            <div class="cart">
+                <span class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </span>
+                <span class="cart-count">0</span>
+            </div>
+
+            <!-- Avatar -->
+            <div class="avatar">
+                <img src="https://scontent.fhan4-3.fna.fbcdn.net/v/t1.18169-9/24852589_365622133863182_7606245839217546982_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=krtrAUjMRNYAX9Z5mLI&_nc_ht=scontent.fhan4-3.fna&oh=00_AT86VLlOx9ihl_cHnKYTdKL7Jt8uLnE44WKel70MqFwMqA&oe=62AE030E"
+                    alt="avatar">
+                <ul class="sub-menu">
+                    <li class="sub-menu-item">Lớp học của tôi</li>
+                    <li class="sub-menu-item"> Lịch sử giao dịch</li>
+                    <li class="sub-menu-item">Hồ sơ cá nhân</li>
+                    <li class="sub-menu-item">Đăng xuất</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="courses">
+     
+    
+        <div class="container" id="seaarch">
+            
+            <div class="box">
+                <form class="sbox" action="/search" method="get">
+                <input class="stext" type="text" name="q" placeholder="Tìm kiếm khóa học">
+                <a class="sbutton" type="submit" href="javascript:void(0);">
+                <i class="fa fa-search"></i>
+                </a>
+                </form>
+                </div>
+        </div>
+
         <div class="container">
+         
             <div class="courses-item">
                 <a href="./card1.html">
                     <div class="card">
@@ -157,6 +247,9 @@
                 </a>
             </div>
         </div>
+    
+
+
     </div>
     <div class="footer">
         <div class="container">
