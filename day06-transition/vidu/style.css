@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    list-style: ;
+}
+.header{
+    width: 1000px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+.logo{
+    height: 100%;
+}
+.logo img {
+    width: 120px;
+  }
+  .menu{
+      display: flex;
+
+  }

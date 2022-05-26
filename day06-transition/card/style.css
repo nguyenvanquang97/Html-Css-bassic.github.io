@@ -1,0 +1,75 @@
+/* Clear 1 số thuộc tính về trang thái ban đầu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Auto xuất hiện nếu trang web có ảnh */
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    
+}
+
+.card {
+    width: 320px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    margin: auto;
+    margin-top: 50px;
+
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card:hover .content{
+    top: 0;
+    opacity: 1;
+}
+.image{
+    
+    overflow: hidden;
+}
+img{
+    transition: all 1s;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+.content {
+    padding: 20px;
+    position: relative;
+    top: 150px;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.title {
+    font-size: 19px;
+    color : #464646;
+    font-weight: 400;
+}
+
+.type, .rating {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 100;
+}
+
+.type {
+    margin: 14px 0;
+}
+
+.rating span {
+    color: #ffd600;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

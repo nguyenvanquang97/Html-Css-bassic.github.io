@@ -1,0 +1,62 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    /* transition-property: width,height;
+    transition-duration: 1s,2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out; */
+    transition: all 0.1s ease-in-out 1s;
+}
+
+.box:hover {
+    width: 400px;
+    height: 400px;
+}
+
+/* /* .text{
+    width: 400px;
+    padding: 20px;
+    background-color: bisqu;
+    overflow: hidden;
+} */
+/* .text p{
+    /* dịch chuyển */
+/* transform: translateX(430px);
+    /* biến mất nhưng vẫn tồn tại,khác với display:none */
+
+/* transition: all 1s;
+}
+.text:hover p{
+    transform: translateX(0px);
+    opacity: 1;
+} */
+.text {
+    width: 400px;
+    overflow: hidden;
+    background-color: bisque;
+    margin: auto;
+    padding: 20px;
+}
+
+.text p {
+    position: relative;
+    left: 450px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.text:hover p {
+    left: 0;
+    opacity: 1;
+}
+
+.text h2 {
+    position: relative;
+    right: 450px;
+    transition: all 1s;
+}
+
+.text:hover h2 {
+    right: 0;
+}
