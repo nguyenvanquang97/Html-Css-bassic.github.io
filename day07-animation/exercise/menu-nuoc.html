@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/11zon_cropped.png" type="image/x-icon">
+    <title>Menu đồ uống</title>
+
+    <!-- Link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link tự viết -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <a href="./index.html">
+            <div class="logo">
+                <img src="https://trungthanhprint.com/upload/mau-logo-tra-sua-dep-21.jpg" alt="logo">
+                <h3>BUBBLE Tea & Coffee</h3>
+            </div>
+
+        </a>
+        <div class="sidebar">
+            <div class="menu">
+                <ul>
+                    <li class="menu-item">
+
+                    </li>
+                    <li class="menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+                    <li class="menu-item"> <a href="./menu-nuoc.html"> MENU ĐỒ UỐNG
+                        </a>
+
+                    </li>
+                    <li class="menu-item"><a href="./huong-dan.html">HƯỚNG DẪN MUA HÀNG</a></li>
+                    <li class="menu-item"><a href="./cham-soc-khach-hang.html">CHĂM SÓC KHÁCH HÀNG</a></li>
+
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Giỏ hàng -->
+            <div class="cart">
+                <span class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </span>
+                <span class="cart-count">0</span>
+            </div>
+
+            <!-- Avatar -->
+            <div class="avatar">
+                <img src="https://scontent.fhan4-3.fna.fbcdn.net/v/t1.18169-9/24852589_365622133863182_7606245839217546982_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=krtrAUjMRNYAX9Z5mLI&_nc_ht=scontent.fhan4-3.fna&oh=00_AT86VLlOx9ihl_cHnKYTdKL7Jt8uLnE44WKel70MqFwMqA&oe=62AE030E"
+                    alt="avatar">
+
+            </div>
+        </div>
+    </div>
+    <div class="banner banner1">
+        <h2>BUBBLE Tea & Coffee</h2>
+        <h3 style="color: red">ƯU ĐÃI DUY NHẤT TRONG THÁNG 6
+
+        </h3>
+        <h4 style="color: red">MIỄN PHÍ VẬN CHUYỂN VỚI ĐƠN 1000 CỐC TRỞ LÊN</h4>
+        <a href="./menu-nuoc.html">
+            <button style="color: black; border: 1px solid black;">ĐẶT HÀNG NGAY</button>
+        </a>
+
+    </div>
+    <div class="container">
+        <select class="right col s5 select" name="" id="sort" onchange="sapXep(this)">
+            <option value="0">Sản phẩm nổi bật</option>
+            <option value="1">Giá tăng dần</option>
+            <option value="2">Giá giảm dần</option>
+            <option value="3">Tên : A-Z</option>
+            <option value="4">Tên : Z-A</option>
+            <option value="5">Cũ nhất</option>
+            <option value="6">Mới nhất</option>
+            <option value="7">Bán chạy nhất</option>
+        </select>
+    </div>
+    <div class="courses menu-nuoc">
+
+        <div class="danhmuc">
+            <h4> Menu </h4><br>
+            <form>
+                <input type="radio" id="BEST SELLER" name="menu-nuoc" value="BEST SELLER">
+                <label for="BEST SELLER">BEST SELLER</label><br>
+                <input type="radio" id="FLAVORED TEA" name="menu-nuoc" value="FLAVORED TEA">
+                <label for="FLAVORED TEA">FLAVORED TEA</label><br>
+                <input type="radio" id="MILK TEA" name="menu-nuoc" value="MILK TEA">
+                <label for="MILK TEA">MILK TEA</label><br>
+                <input type="radio" id="LATTE" name="menu-nuoc" value="LATTE">
+                <label for="LATTE">LATTE</label><br>
+
+            </form>
+
+        </div>
+
+        <div class="container menu-nuoc">
+
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Caramel%20Cheese.jpg"
+                            alt="Caramel Cheese">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Caramel Cheese</h2>
+                        <div class="info">
+                            <p class="gia">59.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Chocolate%20S%E1%BB%AFa.jpg"
+                            alt="Chocolate Sữa">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Chocolate Sữa</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Premium%20Hazelnut.jpg"
+                            alt="Premium Hazelnut">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Premium Hazelnut</h2>
+                        <div class="info">
+                            <p class="gia">55.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Taro%20Latte.jpg" alt="Taro Latte">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Taro Latte</h2>
+                        <div class="info">
+                            <p class="gia">55.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Tr%C3%A0%20d%C3%A2u%20%E1%BB%95i%20h%E1%BB%93ng.jpg"
+                            alt="Trà dâu ổi hồng">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà dâu ổi hồng</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Tr%C3%A0%20b%C6%B0%E1%BB%9Fi%20%C4%91%E1%BB%8F.jpg"
+                            alt="Trà bưởi đỏ">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà bưởi đỏ</h2>
+                        <div class="info">
+                            <p class="gia">55.000đ</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Tr%C3%A0%20g%E1%BA%A1o%20Nh%E1%BA%ADt%20B%E1%BA%A3n.jpg"
+                            alt="Trà gạo Nhật Bản">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà gạo Nhật Bản</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Tr%C3%A0%20%C4%91%C3%A0o.jpg"
+                            alt="Trà đào">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà đào</h2>
+                        <div class="info">
+                            <p class="gia">39.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20s%E1%BB%AFa%20%C3%B4-long.jpg"
+                            alt="Trà sữa ô-long">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà sữa ô-long</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20s%E1%BB%AFa%20truy%E1%BB%81n%20th%E1%BB%91ng.jpg"
+                            alt="Trà sữa truyền thống">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà sữa truyền thống</h2>
+                        <div class="info">
+                            <p class="gia">49.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Taro%20Latte.jpg" alt="Taro Latte">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Taro Latte</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20d%C3%A2u%20%E1%BB%95i%20h%E1%BB%93ng.jpg"
+                            alt="Trà dâu ổi hồng">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà dâu ổi hồng</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20l%E1%BB%B1u%20%C4%91%E1%BB%8F%20anh%20%C4%91%C3%A0o.jpg"
+                            alt="Trà lựu đỏ anh đào">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà lựu đỏ anh đào</h2>
+                        <div class="info">
+                            <p class="gia">45.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20xanh%20Nh%E1%BA%ADt%20B%E1%BA%A3n.jpg"
+                            alt="Trà xanh Nhật Bản">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà xanh Nhật Bản</h2>
+                        <div class="info">
+                            <p class="gia">39.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://tuanit1997.github.io/doan/DATA/IMG/Tr%C3%A0%20v%E1%BA%A3i.jpg" alt="Trà đào">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà vải</h2>
+                        <div class="info">
+                            <p class="gia">55.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="courses-item">
+
+                <div class="card">
+                    <!-- Chứa ảnh -->
+                    <div class="image">
+                        <img src="https://projects.techmaster.vn/doan/DATA/IMG/Tr%C3%A0%20%C4%91%C3%A0o.jpg"
+                            alt="Trà đào">
+                    </div>
+
+                    <!-- Chứa nội dung -->
+                    <div class="content">
+                        <h2 class="title">Trà đào</h2>
+                        <div class="info">
+                            <p class="gia">39.000đ</p>
+
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="item">
+            <h2>ĐỊA CHỈ</h2>
+            <ul>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://www.google.com/maps/place/Ng.+4+P.+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+L%C3%AA+%C4%90%E1%BA%A1i+H%C3%A0nh,+Hai+B%C3%A0+Tr%C6%B0ng,+H%C3%A0+N%E1%BB%99i,+Vietnam/@21.0147049,105.8442092,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8c1de2fed3:0x7384ceded455b6f9!8m2!3d21.0147049!4d105.8463979"
+                            target="_blank">Cơ sở 1: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà Trưng, Hà Nội
+                        </a>
+                    </span>
+
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-building"></i>
+                        <a href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998034,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391"
+                            target="_blank">Cơ sở 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn
+                            Lương
+                            kéo dài, Hà Nội </a>
+                        </a>
+                    </span>
+
+                </li>
+                <li>
+                    <span>
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <a href="https://www.google.com/maps?q=WBS+Training+Vietnam+Company+Limited,+77+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+23,+khu+nh%C3%A0+th%C6%B0%C6%A1ng+m%E1%BA%A1i,+Khu+%C4%91%C3%B4+th%E1%BB%8B+Th%C3%A0nh+ph%E1%BB%91+Giao+l%C6%B0u,+B%E1%BA%AFc+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i+100000&amp;ftid=0x3135ab3b895387d1:0x2e1f39426f713dff&amp;hl=vi-DE&amp;gl=de&amp;entry=gps&amp;lucs=s2se,a2&amp;shorturl=1"
+                            target="_blank">Cơ sở 3: 77 Đường số 23, khu nhà thương mại, KĐT TP Giao lưu,
+                            Bắc Từ
+                            Liêm, Hà Nội </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

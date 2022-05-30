@@ -205,13 +205,6 @@ img {
   margin: auto;
 }
 
-.footer_container {
-  width: 1440px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 48px 0;
-}
 
 .footer_item {
 

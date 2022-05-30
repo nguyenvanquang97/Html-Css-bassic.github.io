@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    background-color: black;
+}
+/* .heart{
+    color: red;
+    font-size: 100px;
+  
+
+    animation:animation 1s 1s infinite;
+    position: relative;
+}
+@keyframes animation{
+    0%{
+        font-size: 100px;
+    }
+    50%{
+        font-size: 200px;
+        color: rgb(19, 18, 17);
+    }
+    100%{
+        font-size: 100px;
+    }
+} */
+.snow{
+    color: #fff;
+}
+.snow .snow1{
+    margin:0 50px;
+    animation: snow1 4s 1s infinite;
+    position: relative;
+}
+.snow .snow2{
+    animation: snow2 5s 1s infinite;
+    position: relative;
+}
+.snow .snow3{
+    animation: snow3 3s 1s infinite;
+    position: relative;
+}
+@keyframes snow1{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 500px;
+        left: 30px;
+    }
+}
+@keyframes snow2{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 500px;
+        left: 30px;
+    }
+}
+@keyframes snow3{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 500px;
+        left: 30px;
+    }
+}
+

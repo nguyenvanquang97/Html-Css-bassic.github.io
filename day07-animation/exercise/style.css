@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color:#f4f7fa ;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo h3{
+    margin-left: 15px;
+    font-size: 23px;
+    color: #26a69a;
+  }
+  .logo img{
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .header {
+    background-color:#ffffff;
+    padding: 0 15px;
+    height: 60px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  }
+  
+  .logo img {
+    width: 80px;
+  }
+  
+  .sidebar {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* style menu */
+  .menu>ul {
+    display: flex;
+  }
+  
+  .menu-item {
+    color: black;
+    font-size: 15px;
+    margin: 0 10px;
+  
+    position: relative;
+    height: 60px;
+  
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .menu-item span {
+    margin-left: 5px;
+  }
+  
+  /* style sub-menu */
+  .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+  
+    width: 200px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    border-radius: 4px;
+    color: #212529;
+  
+    display: none;
+  }
+  
+  .menu-item:hover .sub-menu {
+    display: block;
+  }
+  
+  .avatar:hover .sub-menu {
+    display: block;
+  }
+  
+  .sub-menu-item {
+    padding: 11px 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .sub-menu-item:hover {
+    background-color: #c4c4c4;
+    color: #fff;
+  }
+  
+  /* style shopping cart */
+  
+  /* style avatar */
+  .avatar {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .cart {
+    position: relative;
+    color: black;
+    margin: auto 30px auto 10px;
+  }
+  
+  .cart-count {
+    background-color: red;
+    color: #ffffff;
+    left: 18px;
+    position: absolute;
+    top: -14px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .banner{
+        height: 500px;
+      background-image: url("https://static.wixstatic.com/media/0995e5b287284dde85a299575f74a2fe.jpg/v1/fill/w_1388,h_285,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0995e5b287284dde85a299575f74a2fe.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      line-height: 30px;
+  }
+  .banner h2{
+      color: #05ff26f3;
+      margin-bottom: 30px;
+      font-size: 37px;
+     font-weight: 400;
+    
+  }
+  .banner h3{
+      color: #ffffff;
+      font-size: 23px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      animation: heading 2s   ;
+  }
+  @keyframes heading {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.banner h4{
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    animation: heading1 2s  ;
+}
+@keyframes heading1 {
+  0%{
+      transform: translateX(300px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+button {
+    border: 1px solid #ffffff;
+    display: inline-block;
+    
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+button:hover{
+    background-color: #4CAF50;
+}
+/* thân */
+.best-seller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.best-seller p{
+    padding-top: 30px ;
+}
+.best-seller h3{
+    color: #4CAF50;
+    font-size: 24px;
+    padding-top: 20px;
+}
+/* courses */
+.card {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 19px;
+    color: #464646;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+  }
+  .gia{
+    color: #4CAF50;
+  }
+  
+  .type {
+    margin: 14px 0;
+  }
+  
+  .rating span {
+    color: #ffd600;
+  }
+  
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    position: relative;
+  }
+  
+  .courses{
+      padding: 30px 0;
+  }
+  .courses-item {
+    flex-basis: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  
+  .image {
+    height: 240px;
+    overflow: hidden;
+  }
+  
+  .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+  }
+  .card:hover .image img{
+    transform: scale(1.3);
+  }
+  a{
+    text-decoration: none;
+    color: black;
+}
+.best-seller button{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin: 20px 0;
+}
+.banner.banner2{
+    background-image: url("http://cpd.berkeley.edu/wp-content/uploads/2016/02/photos2.jpeg");
+}
+.banner.banner1{
+  background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-milk-tea-shop-price-list-background-material-picture-image_1096310.jpg");
+  
+}
+.banner.banner3{
+  background-image: url("https://images8.alphacoders.com/593/thumb-1920-593522.jpg");
+ 
+}
+.banner.banner4{
+  background-image: url("https://static.recruitery.co/uploads/images/e6833f8c180a4c56bb4ccc8eec72d4a1_20200731185223.jpg");
+  height: 800px;
+ position: relative;
+}
+.cham-soc{
+  position: absolute;
+
+  top: 300px;
+  right: 180px;
+
+}
+.banner.banner4 a{
+  color: red;
+}
+
+/* footer */
+.footer {
+
+    background-color: #30598c;
+    padding: 20px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242a35;
+  }
+  
+  
+  
+  
+  .item {
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #847a8e;
+    box-shadow: 0 1px #847a8e;
+  }
+  
+  .footer h2 {
+    font-size: 18px;
+    font-weight: 500px;
+  }
+  
+  .container a {
+    text-decoration: none;
+  }
+  .container.menu-nuoc{
+    width: 960px;
+  }
+  .container .right.col.s5.select {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 450px;
+    height: 40px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    font: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .danhmuc{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 30px 0;
+    
+  }
+  .danhmuc form{
+    line-height: 30px;
+  }
+  .danhmuc h4{
+    font-size: 25px;
+    color: #4CAF50;
+  }
+  
+  .courses.menu-nuoc{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
+
+  }
+ label{
+    margin: 0 15px;
+  }
+  /* huong dan mua hang */
+  .buy-wrapper {
+    padding: 40px 0;
+    margin: auto;
+    line-height: 40px;
+}
